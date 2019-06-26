@@ -1,0 +1,28 @@
+---
+title: "Analysis"
+author: "Jean Manguy"
+date: "26/06/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(drake)
+library(rrtoolsNdrake)
+print(getwd())
+# r_make()
+# plan <- create_plan()
+# make(plan)
+```
+
+```{r readd-plots, fig.height=5, fig.width=55}
+readd(cool_plot_setosa)
+readd(cool_plot_versicolor)
+readd(cool_plot_virginica)
+```
+
+

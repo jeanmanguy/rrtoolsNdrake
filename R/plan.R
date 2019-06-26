@@ -5,6 +5,8 @@
 #' @importFrom drake drake_plan target file_out
 #' @importFrom ggplot2 ggsave
 #' @importFrom grDevices cairo_pdf
+#' @importFrom rmarkdown render
+#' @importFrom here here
 create_plan <- function(species = c("setosa", "versicolor", "virginica"), ...) {
   drake_plan(
     my_data = rrtoolsNdrake::load_data(), # see `R/load_data.R`
@@ -19,11 +21,16 @@ create_plan <- function(species = c("setosa", "versicolor", "virginica"), ...) {
     save_plot = target(
       ggsave(
         plot = cool_plot,
-        filename = file_out(!!sprintf("analysis/figures/plot_%s.png", species)),
+        filename = file_out(!!here::here(sprintf("analysis/figures/plot_%s.png", species))),
         width = 4.5,
         height = 4.5
       ),
       transform = map(cool_plot, .id = species)
+    ),
+    report = rmarkdown::render(
+       input = knitr_in(!!here("analysis", "analysis.Rmd")),
+       output_file = file_out(!!here("analysis", "analysis.md")),
+       quiet = TRUE
     ),
     ...
   )
