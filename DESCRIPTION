@@ -1,6 +1,6 @@
 Package: rrtoolsNdrake
 Title: Example of rrtools compendium using Drake
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R:
     person(given = "Jean",
            family = "Manguy",
