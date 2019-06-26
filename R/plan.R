@@ -27,11 +27,6 @@ create_plan <- function(species = c("setosa", "versicolor", "virginica"), ...) {
       ),
       transform = map(cool_plot, .id = species)
     ),
-    report = rmarkdown::render(
-       input = knitr_in(!!here("analysis", "analysis.Rmd")),
-       output_file = file_out(!!here("analysis", "analysis.md")),
-       quiet = TRUE
-    ),
     ...
   )
 }

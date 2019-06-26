@@ -6,12 +6,7 @@ Jean Manguy
 ``` r
 library(drake)
 library(rrtoolsNdrake)
-print(getwd())
-```
-
-    ## [1] "/home/jean/Documents/rrtoolsNdrake/analysis"
-
-``` r
+# print(getwd())
 # r_make()
 # plan <- create_plan()
 # make(plan)
@@ -21,16 +16,16 @@ print(getwd())
 readd(cool_plot_setosa)
 ```
 
-![](/home/jean/Documents/rrtoolsNdrake/analysis/analysis_files/figure-gfm/readd-plots-1.png)<!-- -->
+![](analysis_files/figure-gfm/readd-plots-1.png)<!-- -->
 
 ``` r
 readd(cool_plot_versicolor)
 ```
 
-![](/home/jean/Documents/rrtoolsNdrake/analysis/analysis_files/figure-gfm/readd-plots-2.png)<!-- -->
+![](analysis_files/figure-gfm/readd-plots-2.png)<!-- -->
 
 ``` r
 readd(cool_plot_virginica)
 ```
 
-![](/home/jean/Documents/rrtoolsNdrake/analysis/analysis_files/figure-gfm/readd-plots-3.png)<!-- -->
+![](analysis_files/figure-gfm/readd-plots-3.png)<!-- -->

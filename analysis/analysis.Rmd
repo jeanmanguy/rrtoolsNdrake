@@ -13,13 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(drake)
 library(rrtoolsNdrake)
-print(getwd())
+# print(getwd())
 # r_make()
 # plan <- create_plan()
 # make(plan)
 ```
 
-```{r readd-plots, fig.height=5, fig.width=55}
+```{r readd-plots, fig.height=5, fig.width=5}
 readd(cool_plot_setosa)
 readd(cool_plot_versicolor)
 readd(cool_plot_virginica)
