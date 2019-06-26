@@ -1,13 +1,15 @@
 Package: rrtoolsNdrake
-Title: What the Package Does (One Line, Title Case)
+Title: Example of rrtools compendium using Drake
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Authors@R:
+    person(given = "Jean",
+           family = "Manguy",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph)
+           email = "jean@manguy.eu")
+Description: Test package for Drake and rrtools. 
+  My tentative to make these 2 packages co-habit more or less peacefully.
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
+Imports: bookdown
