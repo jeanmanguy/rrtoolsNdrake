@@ -1,6 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# How to run drake plan
+
+Run `drake::r_make()` (see `_drake.R`) or knit `analysis/analysis.Rmd`
+
+-----
+
+`rrtools` readme below:
+
 # rrtoolsNdrake
 
 This repository contains the data and code for our paper:
