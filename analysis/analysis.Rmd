@@ -44,3 +44,10 @@ readd(cool_plot_virginica)
 ```
 
 ![](figures/plot_setosa.png)
+
+# Session info
+
+```{r}
+sessioninfo::session_info()
+```
+
