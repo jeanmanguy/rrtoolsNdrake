@@ -15,7 +15,11 @@ LazyData: true
 Imports: 
     bookdown,
     drake,
-    ggplot2
+    ggplot2,
+    tibble,
+    magrittr,
+    dplyr,
+    tidyr
 Suggests: 
     devtools
 RoxygenNote: 6.1.1

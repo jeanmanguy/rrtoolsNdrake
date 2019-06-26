@@ -4,10 +4,10 @@
 \alias{create_plan}
 \title{Create plan for Drake}
 \usage{
-create_plan(param = NULL, ...)
+create_plan(species = c("setosa", "versicolor", "virginica"), ...)
 }
 \arguments{
-\item{param}{list for the statistics part}
+\item{species}{list of iris species}
 
 \item{...}{other arguments for \link[drake:drake_plan]{drake_plan}}
 }
