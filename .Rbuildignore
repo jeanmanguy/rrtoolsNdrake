@@ -7,3 +7,4 @@
 ^CONTRIBUTING\.md$
 analysis
 ^_drake\.R$
+^\.drake$

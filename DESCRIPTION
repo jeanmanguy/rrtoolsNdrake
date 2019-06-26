@@ -14,6 +14,9 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     bookdown,
-    drake
+    drake,
+    ggplot2
 Suggests: 
     devtools
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
