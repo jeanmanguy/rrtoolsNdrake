@@ -28,7 +28,14 @@ You can download the compendium as a zip from from this URL:
 </archive/master.zip>
 
 Or you can install this compendium as an R package, rrtoolsNdrake, from
-GitHub with: \#\#\# Licenses
+GitHub with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("jeanmanguy/rrtoolsNdrake")
+```
+
+### Licenses
 
 **Text and figures :**
 [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
