@@ -21,6 +21,8 @@ Imports:
     tidyr
 Suggests: 
     devtools,
-    knitr
+    knitr,
+    here,
+    sessioninfo
 RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)
