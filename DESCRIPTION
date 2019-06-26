@@ -13,7 +13,6 @@ ByteCompile: true
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    bookdown,
     drake,
     ggplot2,
     tibble,
@@ -21,6 +20,7 @@ Imports:
     dplyr,
     tidyr
 Suggests: 
-    devtools
+    devtools,
+    knitr
 RoxygenNote: 6.1.1
 Roxygen: list(markdown = TRUE)

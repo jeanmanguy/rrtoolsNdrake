@@ -1,5 +1,6 @@
-devtools::load_all()
+plan <- rrtoolsNdrake::create_plan(
+  species = c("setosa", "versicolor", "virginica"),
+  output_dir = here::here("analysis/figures/")
+)
 
-plan <- create_plan(species = c("setosa", "versicolor", "virginica"))
-
-drake::drake_config(plan)
+drake::drake_config(plan, packages = c("rrtoolsNdrake", "ggplot2"))
